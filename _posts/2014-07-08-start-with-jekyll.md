@@ -14,7 +14,7 @@ tags : [Jekyll, Blog]
  - 使用Markdown写作，生存HTML代码干净整洁
  - 支持自定义地址，博客分类，单页应用，博客为单位存储，以及自定义的布局设计
 
-#技术准备
+#技术准备Prepare
  - Git & GitHub & GitHub Pages
  - Markdown
  - Liquid Template
@@ -25,3 +25,4 @@ tags : [Jekyll, Blog]
 #开始写作
 
 #深度阅读
+
