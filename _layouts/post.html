@@ -1,5 +1,82 @@
 ---
 layout: default
 ---
-{% include JB/setup %}
-{% include themes/bootstrap-3/post.html %}
+
+<div class="home container-fluid bs-docs-container">
+	<div class="row">
+		<div class="main col-md-9">
+			<div class="entry-wrapper">
+				<article class="post">
+					<header class="post-header">
+						<h1>{{ page.title }}</h1>
+					</header>
+					<hr>
+					<div class="post-meta">
+						<span><i class="fa fa-clock-o"></i> {{ page.date | date: "%b %-d, %Y" }}</span>
+						<span><i class="fa fa-user"></i> {{site.username}}</span>
+						{%if page.tags %}
+						<span><i class="fa fa-tags"></i> 标签:</span>
+							{% for tag in page.tags %} 
+							<a href="#" class="b-b-d">{{ tag }}</a>
+							{% endfor %}
+						{% endif %}
+					</div>
+					<div class="post-content">
+						<section>
+						{{ content }}
+						</section>
+														
+					</div>
+				</article>
+				<div class="cust-pagination">
+						{% if page.previous %}
+						<a class="pull-left" href="{{ page.previous.url }}"> <i class="fa fa-angle-left"></i> 上一篇</a>
+						{% else %}
+						<span class="pull-left"><i class="fa fa-angle-left"></i> 上一篇</span>
+						 {% endif %}
+						{% if page.next %}
+						<a class="pull-right" href="{{ page.next.url }}">下一篇 <i class="fa fa-angle-right"></i> </a>
+						{% else %}
+						<span class="pull-right"> 下一篇 <i class="fa fa-angle-right"></i></span>
+						{% endif %}
+						<div class="clearfix"></div>
+				</div>	
+			<a name="comments"> </a>
+			<div id="comment">
+			    <div class="ds-thread" data-title="test"></div>
+			    <script type="text/javascript">
+			        var duoshuoQuery = {short_name:"tookit"};
+			        (function() {
+			            var ds = document.createElement('script');
+			            ds.type = 'text/javascript';ds.async = true;
+			            ds.src = 'http://static.duoshuo.com/embed.js';
+			            ds.charset = 'UTF-8';
+			            (document.getElementsByTagName('head')[0]
+			                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+			        })();
+			    </script>
+			</div>																											
+			</div>
+		</div>
+		<div class="sidebar col-md-3">
+			<div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top" role="complementary">
+				<h3 class="b-b-d fast-nav">快速导航</h3>
+			    <ul class="nav bs-docs-sidenav">
+			        <li class="active">
+			            <a href="#switching-theme">变更主题</a>
+			        </li>
+			        <li>
+			            <a href="#what-is-handlebars">Handlebars 是什么</a>
+			        </li>
+			        <li>
+			            <a href="#about">关于 Ghost 主题</a>
+			        </li>
+			        <li>
+			            <a href="#file-structure">Ghost 主题的文件架构</a>
+			        </li>
+			    </ul>
+			</div>
+
+		</div>
+	</div>
+</div>

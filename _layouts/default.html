@@ -1,6 +1,21 @@
----
-theme :
-  name : bootstrap-3
----
-{% include JB/setup %}
-{% include themes/bootstrap-3/default.html %}
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+
+    {% include header.html %}
+
+    <div id="content" class="b-l-s">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="/asset/js/docs.min.js"></script>
+    </body>
+</html>
