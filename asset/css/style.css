@@ -18,20 +18,21 @@ p {
     margin: 0 0 15px
 }
 a {
-    color: #333333;
+    color: #2d2d2d;
     -webkit-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
 }
 a:hover,
 a:focus {
-    color: #4b93bf;
+    color: #4b93bf;;
     text-decoration: none;
 }
 .colored {
     color: #1abb9c
 }
 
+.post-content a{ border-bottom: 1px dotted #eee;}
 
 #header{
   position: fixed;

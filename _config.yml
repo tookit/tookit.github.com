@@ -2,9 +2,10 @@
 # Site settings
 title: Web开发过程中的胡言乱语
 email: wangqiangshen@gmail.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "专注于WEB开发，WEB设计，jQuery开发，Python开发，服务器优化，搜索引擎"
+keywords: "Web开发,Web设计,Python,Linux,Elasticsearch,Big Data"
 baseurl: ""
-url: "http://yourdomain.com"
+url: "http://tookit.github.com"
 username: Michaelwang
 paginate: 5
 # Build settings
